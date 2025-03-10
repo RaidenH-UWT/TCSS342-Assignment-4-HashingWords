@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Driver {
     private static final boolean DEBUG = false;
-    private static final String EXITMSG = "CODE418";
+    private static final String EXITMSG = "I <3 O(1)";
     private static int CAPACITY = 43427;
     private static final int DEBUGCAPACITY = 51;
 
@@ -59,11 +59,15 @@ public class Driver {
         Scanner reader;
         do {
             reader = new Scanner(System.in);
-            print("Enter search term, or " + EXITMSG + " to exit:");
+            print("Enter search term, or '" + EXITMSG + "' to exit:");
 
             input = reader.nextLine();
             print("\nYou entered: " + input);
             try {
+                if (input.toLowerCase().contains("dragon")) {
+                    print("WOOOOOO DRAGONS!!!!!");
+                }
+                
                 Anagram anagram = table.get(table.search(input));
                 int count = anagram.getValues().size();
                 if (anagram.getValues().contains(input)) count--;
@@ -75,7 +79,7 @@ public class Driver {
                 LinkedList<String> anagrams = new LinkedList<String>(anagram.getValues());
                 anagrams.remove(input);
                 
-                result += Arrays.toString(anagrams.toArray());
+                if (anagrams.size() > 0) result += Arrays.toString(anagrams.toArray()) + "\n";
 
                 print(result);
             } catch (NullPointerException e) {
