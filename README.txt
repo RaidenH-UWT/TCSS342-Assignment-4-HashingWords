@@ -16,3 +16,7 @@ I don't think I would have approached it any differently, I didn't get lost anyw
 trying to do something that wouldn't work, it just took a bit of time to get it
 down and I don't think I could have taken a different approach to avoid that
 entirely.
+
+
+*There are also two easter eggs hidden in my program, one is only visible by looking in the
+code (or by doing a bit of math), the other can be discovered with a bit of trial and error :)

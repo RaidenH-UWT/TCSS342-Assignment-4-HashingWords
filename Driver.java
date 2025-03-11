@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Driver {
     private static final boolean DEBUG = false;
     private static final String EXITMSG = "I <3 O(1)";
-    private static int CAPACITY = 43427;
+    private static int CAPACITY = 63421;
     private static final int DEBUGCAPACITY = 51;
 
     private static void print(Object object) {
